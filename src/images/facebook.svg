@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 41 41" width="41" height="41">
+	<defs>
+		<image width="11" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATBAMAAAC0B+rjAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtyhvagAAAAp0Uk5TAAkQGcP/j0ABYwTmx50AAAAzSURBVHicY2BgYGBUUgCSzK6hAUBKNRRMpUKo0DCwXGg4AwOMAioAyaFSTUqhkRgqiaYA+ywSQz3E7cYAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Warstwa 1" href="#img1" x="15" y="11" />
+</svg>
