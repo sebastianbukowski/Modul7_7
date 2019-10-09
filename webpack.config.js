@@ -27,18 +27,26 @@ module.exports = {
                     }
                 ]
             },
-            // {
-            //     test: /\.(png|svg|jpg|gif)$/,
-            //     include : path.join(__dirname, 'images'),
-            //     use: {
-            //         loader: 'file-loader',
-            //         options: {
-            //             name: '[path][name].[ext]',
-            //             outputPatch: 
-            //         }
-
-            //     }   
-            // }
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                include : path.join(__dirname, '../src/images'),
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    }
+                }   
+            },
+            {
+                test: /\.html$/,
+                include: path.resolve(__dirname, '../src/components'),
+                use: {
+                  loader: 'html-loader',
+                  options: {
+                    interpolate: true
+                  }
+                }
+            },
         ],
     },
     plugins: [new HtmlWebpackPlugin({

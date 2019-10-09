@@ -1,0 +1,41 @@
+/* services */
+
+.services__image-box {
+  width: 100%;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__img-wrapper {
+  border-radius: 33px;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fed136;
+ 
+}
+.services__img-wrapper img {
+ flex: 0 1 auto;
+}
+.services__title-e-commerce {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 75px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.services__description {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  text-align: center;
+}

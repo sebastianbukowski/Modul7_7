@@ -1,0 +1,109 @@
+
+/* Contact us */
+
+.contact-us {
+  padding: 88px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-us__heading-2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+      
+}
+.contact-us__heading-3 {
+  padding-top: 17px;
+  font-size: 16px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+.contact-us__list {
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.contact-us__text {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700; 
+}
+.contact-us__message {
+  height: 209px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.contact-us__form {
+  padding-top: 68px;
+}
+
+.contact-form__item {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.contact-form__item input, .contact-form__item textarea {
+  width: calc(100% - 13.5px);
+  padding-left: 20px;
+}
+
+.contact-form__item textarea {
+  padding-top: 15px;
+}
+
+.contact-form fieldset {
+  width: 100%;
+}
+.contact-form__item label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.contact-form__item label:after {
+  content: "*";
+  display: inline;
+  padding-left: 5px;
+}
+
+.contact-form__item label[for="your-message"] {
+  top: 20px;
+  transform: unset;
+}
+.contact-form__button {
+  display: block;
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform .3s ease-in-out;
+}
+
+.contact-form__button:hover {
+  transform: scale(1.1);
+}
