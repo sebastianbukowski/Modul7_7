@@ -28,8 +28,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
-                include : path.join(__dirname, '../src/images'),
+                test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
                 use: {
                     loader: 'file-loader',
                     options: {
