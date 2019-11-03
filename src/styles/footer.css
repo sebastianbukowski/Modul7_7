@@ -48,3 +48,18 @@
   padding-top: 35px;
   padding-bottom: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    position: static;
+    transform: none;
+    padding-bottom: 15px;
+  }
+  .footer__copyrights {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .icons-wrapper {
+    margin: 0 auto;
+  }
+}

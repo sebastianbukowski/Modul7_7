@@ -80,3 +80,20 @@
   text-transform: uppercase;
   line-height: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .about-us__timeline--right [class^="col"], .about-us__timeline--left [class^="col"] {
+    float: initial;
+  } 
+  .about-us__img-wrapper::after {
+    content: none;
+  }
+  .about-us__timeline--left .about-us__description-title, .about-us__timeline--left .about-us__description-text {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .about-us__timeline--right .about-us__description-title, .about-us__timeline--right .about-us__description-text {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}

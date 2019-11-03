@@ -21,6 +21,7 @@
   transform: translateX(-50%);
   transition: height .4s ease-in-out, opacity .4s ease-in-out;
   background-color: initial;
+  z-index: 10;
 }
 
 .header__nav.open {
@@ -34,8 +35,18 @@
   opacity: 0;
 }
 
+.hamburger {
+  display: none;
+}
+
 .header__navbar {
   float: right;
+}
+
+.header__links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -67,7 +78,7 @@
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 400;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.25s ease-in-out;  
@@ -119,4 +130,48 @@
 
 .header__btn:hover {
  transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+  .header__nav {
+    display: block;
+  }
+
+  .header__nav ul {
+    display: none;
+  }
+
+  .header__nav.hamburger-open ul {
+    display: block;
+  }
+  .header__navbar {
+    display: block;
+    float:  initial;
+  }
+  .header__navbar li {
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(0,0,0,.35); 
+  }
+
+  .header__navbar li:last-child {
+    padding-right: 30px;
+  }
+
+  .header__logo {
+    float: initial;
+  }
+  .header__btn:hover {
+    transform: initial;
+  }
+  .hamburger {
+    width: 40px;
+    height:40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(79%) sepia(87%) saturate(812%) hue-rotate(329deg) brightness(107%) contrast(99%);
+    display: block;
+    cursor: pointer;
+  }
 }
